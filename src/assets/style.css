@@ -1,0 +1,16 @@
+.v-alert {
+  border-radius: 0;
+  border-width: 4px 0 0;
+  border-style: solid;
+  color: black;
+  background-color: red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 14px;
+  margin: 4px auto;
+  padding: 16px;
+  position: relative;
+  -webkit-transition: 0.3s cubic-bezier(0.25, 0.8, 0.5, 1);
+  transition: 0.3s cubic-bezier(0.25, 0.8, 0.5, 1);
+}

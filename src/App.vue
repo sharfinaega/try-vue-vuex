@@ -7,7 +7,8 @@
 
 <script>
 import HelloWorld from "./components/HelloWorld.vue";
-import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+import "vuetify/dist/vuetify.min.css";
+import "../src/assets/style.css";
 
 export default {
   name: "App",

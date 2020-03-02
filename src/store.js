@@ -3,9 +3,12 @@ import Vuex from "vuex";
 import "es6-promise/auto";
 import axios from "axios";
 import VueAxios from "vue-axios";
+import Vuetify from "vuetify";
+import "vuetify/dist/vuetify.min.css";
 
 Vue.use(Vuex);
 Vue.use(VueAxios, axios);
+Vue.use(Vuetify);
 
 const store = new Vuex.Store({
   state: {
@@ -18,8 +21,12 @@ const store = new Vuex.Store({
   },
   getters: {
     getProducts: state => {
-      console.log(state);
-      return state.products;
+      // console.log(state);
+      // return state.products;
+      const data = [];
+      if (state.products.manufacturer === "Monster Beverage") {
+        data.push(state.products.manufacturer);
+      }
     }
   },
   actions: {
